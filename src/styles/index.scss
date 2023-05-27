@@ -1,0 +1,155 @@
+@import '../styles/variables.scss';
+
+.home-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assets//backgroundHamburguer.jpg');
+    background-position:center; 
+    background-size:cover;
+    z-index: 2;
+    @media screen and (max-width:1024px){
+        align-items: center;
+        justify-content: center;
+    } 
+}
+
+.home-left-content{
+    display: flex;
+    flex-direction: column;
+    width:579px ;
+    height: auto;
+    margin-left: 108px;
+    @media screen and (max-width:640px){
+        width:500px;
+        margin: 0;
+    }
+
+    h1{
+        display: flex;
+     font-style: normal;
+     font-weight: 800;
+     font-size: 64px;
+     line-height: 78px;
+     color: $white-color;
+     margin-bottom: 21px;
+     opacity: 0;
+     animation: slideRight 1s forwards;
+     animation-delay: .4s;
+     @media screen and (max-width:800px){
+        font-size:50px ;
+        text-align: center;
+        line-height: 68px;
+        margin: 0 auto;
+     }
+     @media screen and (max-width:600px){
+        font-size:40px ;
+        line-height: 58px;
+        text-align: center;
+     }
+
+     @media screen and (max-width:420px){
+        font-size:35px ;
+        line-height: 48px;
+        text-align: center;
+     }
+     @media screen and (max-width:340px){
+        font-size:30px ;
+        line-height: 38px;
+        text-align: center;
+     }
+     @media screen and (max-width:280px){
+        font-size:30px ;
+        line-height: 28px;
+        text-align: center;
+     }
+    }
+
+    p{
+     display: flex;
+     flex:  1;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 24px;
+     text-align: justify;
+     color: $white-color;
+     margin-bottom: 46px;
+     opacity: 0;
+     animation: slideLeft 1s forwards;
+     animation-delay: .6s;
+     @media screen and (max-width:680px){
+        font-size: 18px;
+        text-align: center;
+        align-self: center;
+     }
+     @media screen and (max-width:600px){
+        font-size:16px ;
+       
+     }
+     
+    }
+
+    .home-socials-content{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        @media screen and (max-width:800px){
+            align-items: center;
+            justify-content: center;
+         }
+        a{
+           font-size: 45px;
+           &:hover{     
+            transform: scale(1.2);
+            transition: 1s;
+           }
+        }
+        #instagran{
+            color: #d6249f;
+            opacity: 0;
+            animation: zoomIn 1s forwards;
+            animation-delay: .8s;
+        }
+
+        #facebook{
+            color: $facebook-color;
+            opacity: 0;
+            animation: zoomIn 1s forwards;
+            animation-delay: .9s;
+        }
+
+        #whatsApp{
+           color: $whatsApp-color;
+           opacity: 0;
+            animation: zoomIn 1s forwards;
+            animation-delay: 1s;
+        }
+
+    }
+
+    
+    .menu-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:180px ;
+        padding: 10px;
+        border: 1px solid $yellow-color;
+        color: $yellow-color;
+        border-radius: 20px;
+        opacity: 0;
+        animation: zoomIn 1s forwards;
+        animation-delay: 1s;
+        @media screen and (max-width:800px){
+            align-self: center;
+         }
+        &:hover{
+            background-color: $yellow-color;
+            color: $white-color;
+            border: none;
+            transition: .8s;
+        }
+    }
+}
