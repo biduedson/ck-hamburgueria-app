@@ -33,7 +33,7 @@ export const drinks = [
     { id: 6, name: "Fanta uva", Image: fantaUvaLata, description: "Refrigerante Fanta uva lata de 390ml.", price: 'R$ 5,90' },
     { id: 7, name: "Coca Cola", Image: coca2l, description: "Refrigerante Coca Cola 2 litros.", price: 'R$ 13,90' },
     { id: 8, name: "Pepsi", Image: pepsi2l, description: "Refrigerante Pepsi 2 litros.", price: 'R$ 13,90' },
-    { id: 9, name: "Guarana Antartica", Image: guarana2l, description: "Refrigerante Guarana Aantartica 2 litros", price: 'R$ 13,90' },
+    { id: 9, name: "Guarana Antartica", Image: guarana2l, description: "Refrigerante Guarana Aantartica 2 litros", price: 'R$ 13,90' }
 ]
 
 export const socialsMedias = [

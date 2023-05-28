@@ -1,5 +1,4 @@
 import { socialsMedias } from '../data/data'
-import { MdDeliveryDining } from 'react-icons/md'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -21,6 +20,7 @@ function index() {
                     }
                 </section>
                 <Link className='menu-link' href="/Menu">Confira nosso menu</Link>
+
             </section>
         </div>
     )

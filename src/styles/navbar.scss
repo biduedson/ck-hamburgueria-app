@@ -1,4 +1,5 @@
 @import '../styles//variables.scss';
+
 .navbar {
   display: flex;
   width: 100%;
@@ -9,11 +10,58 @@
   z-index: 99;
   position: fixed;
   @media screen and (max-width:768px){ 
-    justify-content: space-between;     
+    justify-content: center;  
+    .delivery-icon-container{
+      width: 100%;
+      align-self: center;
+    }   
     .display-none{
         display: none;
       }
+      .logo-container{
+        position: absolute;
+        left: 0;
+      }
    }
+   
+   #logo-01{
+    width: 80px;
+    height: 80px; 
+  }
+  
+  .delivery-icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    span{
+      color: $white-color;
+      font-size: 25px;
+    }
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      gap: 5px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: justify;
+      color: $white-color;
+    }
+  }
+  #delivery-icon{
+    display: flex;
+    width:60px;
+    height: 60px;
+    align-self: center;
+    justify-self: center;
+    animation: pulse 1s forwards infinite;
+    opacity: 1;
+    
+   } 
   
    
   ul {
@@ -38,12 +86,13 @@
       gap: 5px;
       span{
         display: none;
+        color: $white-color;
+        font-size: 18px;
       }
+      
       @media screen and (max-width:768px){
         span{
-          display: inline;
-          color: $white-color;
-          font-size: 18px;
+          display: inline;          
         }
         width: 150px;
         background: $red-color;               
@@ -64,6 +113,9 @@
         }
         &:nth-child(3){
         animation-delay:750ms;
+        }
+        &:nth-child(4){
+          animation-delay:1s;
         }
        
        @keyframes animation_menu {
@@ -88,12 +140,7 @@
 
   }
 
-  #logo-01{
-    width: 80px;
-    height: 80px;
-    animation: pulse 1s forwards infinite;
-    opacity: 1;
-  }
+ 
 
 .nav-mobile{
   display: none;
@@ -112,5 +159,6 @@
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);  
   transition: .5s;
 }
+
 
 

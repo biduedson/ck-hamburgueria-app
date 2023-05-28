@@ -58,5 +58,10 @@ body {
   }
 }
 
-
+@keyframes animation_menu {
+  to{
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
 

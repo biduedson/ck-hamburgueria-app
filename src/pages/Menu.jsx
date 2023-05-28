@@ -14,7 +14,7 @@ function Menu() {
             <h1>Menu</h1>
             <div className='bts-menu-container'>
                 <button onClick={() => setDataItens(haburguersDescription)} >Hamburguers</button>
-                <button>Porções</button>
+                <button>Combos</button>
                 <button onClick={() => setDataItens(drinks)}>Bebidas</button>
             </div>
             <div className='cards-hamburguers'>

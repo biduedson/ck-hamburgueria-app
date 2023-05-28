@@ -10,10 +10,9 @@ function Myapp({ Component, pageProps }) {
         <>
             <NavBar />
             <Head>
-                <title>First Aplication NextJs</title>
+                <title>Hamburgueria CK</title>
                 <meta name="description" content="CK Hamburgueria" />
             </Head>
-
             <Component {...pageProps} />
         </>
     )
