@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link';
-import { haburguersDescription, socialsMedias } from '../data/data'
+import { haburguersDescription, socialsMedias, drinks } from '../data/data'
+import { useState } from 'react';
 
 function Menu() {
+
+    const [dataItens, setDataItens] = useState(haburguersDescription)
 
     return (
         <section className="menu">
@@ -10,25 +13,25 @@ function Menu() {
             <div className='background-linear'></div>
             <h1>Menu</h1>
             <div className='bts-menu-container'>
-                <button>Hamburguers</button>
+                <button onClick={() => setDataItens(haburguersDescription)} >Hamburguers</button>
                 <button>Porções</button>
-                <button>Bebidas</button>
+                <button onClick={() => setDataItens(drinks)}>Bebidas</button>
             </div>
             <div className='cards-hamburguers'>
                 {
-                    haburguersDescription.map((description) => {
+                    dataItens.map((iten) => {
                         return (
-                            <div className='card-harburguer' key={description.id} style={{
+                            <div className='card-harburguer' key={iten.id} style={{
                                 opacity: '0',
                                 animation: ' zoomIn 1s forwards',
-                                animationDelay: `${description.id}`
+                                animationDelay: `${iten.id}`
                             }}>
-                                <p>{description.name}</p>
-                                <Image src={description.Image} id='hamburguer-photo' alt='hamburguer-photo' />
+                                <p>{iten.name}</p>
+                                <Image src={iten.Image} id='hamburguer-photo' alt='hamburguer-photo' />
                                 <div className='description-burguer'>
-                                    <p>{description.description}</p>
+                                    <p>{iten.description}</p>
                                 </div>
-                                <button>{description.price}</button>
+                                <button>{iten.price}</button>
                                 <div className='socials-link-menu'>
                                     {
                                         socialsMedias.map((media) => {
