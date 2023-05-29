@@ -2,16 +2,16 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { haburguersDescription, socialsMedias, drinks } from '../data/data'
 import { useState } from 'react';
+import { MdFastfood } from 'react-icons/md'
+
 
 function Menu() {
-
     const [dataItens, setDataItens] = useState(haburguersDescription)
 
     return (
         <section className="menu">
-
             <div className='background-linear'></div>
-            <h1>Menu</h1>
+            <h1><span>{<MdFastfood />}</span> Menu</h1>
             <div className='bts-menu-container'>
                 <button onClick={() => setDataItens(haburguersDescription)} >Hamburguers</button>
                 <button>Combos</button>

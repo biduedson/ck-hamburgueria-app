@@ -3,7 +3,10 @@ import '../styles/global.scss'
 import '../styles/navbar.scss'
 import '../styles/index.scss'
 import '../styles/menu.scss'
+import '../styles/footer.scss'
+
 import NavBar from "../componets/NavBar";
+import Footer from "../componets/Footer"
 
 function Myapp({ Component, pageProps }) {
     return (
@@ -14,6 +17,7 @@ function Myapp({ Component, pageProps }) {
                 <meta name="description" content="CK Hamburgueria" />
             </Head>
             <Component {...pageProps} />
+            <Footer />
         </>
     )
 }
