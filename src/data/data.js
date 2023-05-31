@@ -1,5 +1,5 @@
 import { FaWhatsappSquare, FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa'
-import hamburguer3 from '../assets/hamburguers/pngwing.com (1).png'
+import hamburguer3 from '../assets/hamburguers/hamburguer01 (1).png'
 import hamburguer4 from '../assets/hamburguers/pngwing.com (2).png'
 import hamburguer5 from '../assets/hamburguers/pngwing.com.png'
 import hotburguer from '../assets/_2102393221184.png'
