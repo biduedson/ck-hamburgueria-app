@@ -1,8 +1,14 @@
 import { FaWhatsappSquare, FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa'
-import hamburguer3 from '../assets/hamburguers/hamburguer01 (1).png'
-import hamburguer4 from '../assets/hamburguers/pngwing.com (2).png'
-import hamburguer5 from '../assets/hamburguers/pngwing.com.png'
-import hotburguer from '../assets/_2102393221184.png'
+import hamburguer01 from '../assets/hamburguers/hamburguer01.png'
+import hamburguer02 from '../assets/hamburguers/hamburguer02.png'
+import hamburguer03 from '../assets/hamburguers/hamburguer03.png'
+import hamburguer04 from '../assets/hamburguers/hamburguer04.png'
+import hamburguer05 from '../assets/hamburguers/hamburguer05.png'
+import hamburguer06 from '../assets/hamburguers/hamburguer06.png'
+import hamburguer07 from '../assets/hamburguers/hamburguer07.png'
+import hamburguer08 from '../assets/hamburguers/hamburguer08.png'
+import hamburguer09 from '../assets/hamburguers/hamburguer09.png'
+import hamburguer10 from '../assets/hamburguers/hamburguer10.png'
 import cocaLata from '../assets/bebidas/cocaLata.png'
 import fantaLata from '../assets/bebidas/fanta_lata.png'
 import pepsiLata from '../assets/bebidas/pepsiLata.png'
@@ -14,14 +20,17 @@ import pepsi2l from '../assets/bebidas/pepsi2L.png'
 import guarana2l from '../assets/bebidas/guarana_antartica2L.png'
 
 export const haburguersDescription = [
-    { id: 1, name: "CK SMASHBURGUER", Image: hamburguer3, description: "Pão, hamburguer, queijo, cebola, maionese da casa.", price: 'R$:29,90' },
-    { id: 2, name: "CK SMASHBURGUER SALADA", Image: hamburguer4, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 3, name: "CK SMASHBURGUER BACON", Image: hamburguer5, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 4, name: "CK SMASHBURGUER CHEDDAR", Image: hamburguer3, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 5, name: "CK SMASHBURGUER PICANHA", Image: hamburguer4, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 6, name: "CK SMASHBURGUER COSTELA", Image: hamburguer5, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 7, name: "CK SMASHBURGUER COSTELA", Image: hamburguer3, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
-    { id: 8, name: "CK SMASHBURGUER COSTELA", Image: hamburguer4, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 1, name: "CK SMASHBURGUER", Image: hamburguer01, description: "Pão, hamburguer, queijo, cebola, maionese da casa.", price: 'R$:29,90' },
+    { id: 2, name: "CK SMASHBURGUER SALADA", Image: hamburguer02, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 3, name: "CK SMASHBURGUER BACON", Image: hamburguer03, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 4, name: "CK SMASHBURGUER CHEDDAR", Image: hamburguer04, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 5, name: "CK SMASHBURGUER PICANHA", Image: hamburguer05, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 6, name: "CK SMASHBURGUER COSTELA", Image: hamburguer06, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 7, name: "CK SMASHBURGUER COSTELA", Image: hamburguer07, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 8, name: "CK SMASHBURGUER COSTELA", Image: hamburguer08, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 9, name: "CK SMASHBURGUER COSTELA", Image: hamburguer09, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+    { id: 10, name: "CK SMASHBURGUER COSTELA", Image: hamburguer10, description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.", price: 'R$:29,90' },
+
 ]
 
 export const drinks = [

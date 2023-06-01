@@ -20,7 +20,7 @@ function Footer() {
                     }
                 </div>
                 <p className='copyright'>
-                    Desenvolvido   por <span>EGAdesign</span>
+                    Desenvolvido   por <small> EGAdisign &copy;2023 All Rights Reserved</small>
                 </p>
                 <p id='ega-design-phone'><span>{<BsWhatsapp />}</span> +551193486-7766</p>
             </div>
