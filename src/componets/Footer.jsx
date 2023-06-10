@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import logo01 from '../assets/logo01.png'
 import { socialsMedias } from '../data/data'
 import Image from 'next/image'
@@ -8,8 +9,17 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className='footer-content'>
-                <h2><Image src={logo01} alt='logo' id='logo-01' /><span>Hamburgueria</span> CK</h2>
-                <p>Siga-nos nas redes sociais e fique por dentro de todas as nossas ações</p>
+                <h2><Image src={logo01} alt='logo' id='logo-footer' />HamburgueriaCK</h2>
+
+                <nav className='footer-nav'>
+                    <ul>
+                        <li>
+                            <Link href="/">Início</Link>
+                            <Link href="/Menu">Menu</Link>
+                            <Link href="/Contact">Contato</Link>
+                        </li>
+                    </ul>
+                </nav>
                 <div>
                     {
                         socialsMedias.map((media) => {
@@ -19,10 +29,13 @@ function Footer() {
                         })
                     }
                 </div>
-                <p className='copyright'>
-                    Desenvolvido   por <small> EGAdisign &copy;2023 All Rights Reserved</small>
-                </p>
-                <p id='ega-design-phone'><span>{<BsWhatsapp />}</span> +551193486-7766</p>
+                <div className='copyright-content'>
+                    <p className='copyright'>
+                        Desenvolvido   por <small> EGAdisign &copy;2023 All Rights Reserved</small>
+                    </p>
+                    <p id='ega-design-phone'><span>{<BsWhatsapp />}</span> +551193486-7766</p>
+                </div>
+
             </div>
         </footer>
     )

@@ -45,24 +45,20 @@
      }
      @media screen and (max-width:600px){
         font-size:40px ;
-        line-height: 58px;
-        text-align: center;
+        line-height: 58px;   
      }
 
      @media screen and (max-width:420px){
         font-size:35px ;
-        line-height: 48px;
-        text-align: center;
+        line-height: 48px;  
      }
      @media screen and (max-width:340px){
         font-size:30px ;
-        line-height: 38px;
-        text-align: center;
+        line-height: 38px;   
      }
      @media screen and (max-width:280px){
-        font-size:30px ;
+        font-size:26px ;
         line-height: 28px;
-        text-align: center;
      }
      
     }
@@ -72,7 +68,7 @@
      flex:  1;
      font-style: normal;
      font-weight: 400;
-     font-size: 20px;
+     font-size:  clanp(16px, 20px, 222px) ;
      line-height: 24px;
      text-align: justify;
      color: $white-color;
@@ -80,14 +76,13 @@
      opacity: 0;
      animation: slideLeft 1s forwards;
      animation-delay: .6s;
-     @media screen and (max-width:680px){
-        font-size: 18px;
+     @media screen and (max-width:800px){
         text-align: center;
         align-self: center;
      }
-     @media screen and (max-width:600px){
-        font-size:16px ;
-       
+     @media screen and (max-width:680px){ 
+        text-align: center;
+        align-self: center;
      }
      
     }
@@ -99,20 +94,42 @@
         @media screen and (max-width:800px){
             align-items: center;
             justify-content: center;
+            
+         }
+
+         @media screen and (max-width:320px){
+           gap: 10px;
          }
         
         a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
            font-size: 45px;
            &:hover{     
             transform: scale(1.2);
             transition: 1s;
            }
+
+           p{
+            font-size: 10px;
+            text-align: center;
+            @media screen and (max-width:600px){
+                font-size: 8px;
+             }
+           }
+           @media screen and (max-width:320px){
+            font-size: 35px;
+          }
         }
+       
         #instagran{
             color: #d6249f;
             opacity: 0;
             animation: zoomIn 1s forwards;
             animation-delay: .8s;
+           
         }
 
         #facebook{
@@ -129,6 +146,23 @@
             animation-delay: 1s;
         }
 
+        #tiktok{
+            font-size: 35px;
+            color: $white-color;
+            background: $black-color;
+            width: 42px;
+            height: 42px;
+            border-radius: 5px;
+            opacity: 0;
+             animation: zoomIn 1s forwards;
+             animation-delay: 1.1s;
+             @media screen and (max-width:320px){
+                width: 35px;
+                height: 35px;
+                border-radius: 5px;
+              }
+         }
+
     }
 
     
@@ -136,7 +170,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width:190px ;
+        width:250px ;
         padding: 10px;
         border: 1px solid $yellow-color;
         color: $yellow-color;
@@ -146,6 +180,10 @@
         animation-delay: 1s;
         @media screen and (max-width:800px){
             align-self: center;
+         }
+        @media screen and (max-width:320px){
+            width:180px ;
+            font-size: 12px;
          }
         &:hover{
             background-color: $yellow-color;

@@ -36,7 +36,9 @@ function Menu() {
                                     {
                                         socialsMedias.map((media) => {
                                             return (
-                                                <a key={media.id} id={media.name} href={media.link}>{media.icon}</a>
+                                                <>
+                                                    <a key={media.id} id={media.name} href={media.link}>{media.icon}</a>
+                                                </>
                                             )
                                         })
                                     }
